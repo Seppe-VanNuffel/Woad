@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Woad.Core/Woad.Core.csproj" />
+  <Project Path="Woad/Woad.csproj" />
+</Solution>
