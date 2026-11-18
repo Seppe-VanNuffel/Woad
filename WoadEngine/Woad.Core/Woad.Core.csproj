@@ -1,21 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
     <PropertyGroup>
-        <TargetFramework>net11.0</TargetFramework>
-        <ImplicitUsings>enable</ImplicitUsings>
-        <Nullable>enable</Nullable>
         <PackageId>Woad.Core</PackageId>
         <Version>0.0.1-alpha</Version>
-        <Authors>SeppeVanNuffel</Authors>
         <Description>Pure managed core of the Woad 2D game engine. Pre-alpha placeholder.</Description>
-        <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageReadmeFile>README.md</PackageReadmeFile>
-        <RepositoryUrl>https://github.com/Seppe-VanNuffel/Woad</RepositoryUrl>
-        <RepositoryType>git</RepositoryType>
         <PackageTags>game-engine;2d;opengl;gamedev</PackageTags>
     </PropertyGroup>
-
-
+    
     <ItemGroup>
         <None Include="README.md" Pack="true" PackagePath="\" />
     </ItemGroup>

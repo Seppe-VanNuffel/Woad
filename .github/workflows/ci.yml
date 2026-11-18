@@ -1,0 +1,21 @@
+﻿name: CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          global-json-file: global.json
+      - run: dotnet restore WoadEngine/WoadEngine.sln
+      - run: dotnet build WoadEngine/WoadEngine.sln -c Release --no-restore
+      - run: dotnet test WoadEngine/WoadEngine.sln -c Release --no-build
