@@ -16,6 +16,6 @@ jobs:
       - uses: actions/setup-dotnet@v4
         with:
           global-json-file: global.json
-      - run: dotnet restore WoadEngine/WoadEngine.sln
-      - run: dotnet build WoadEngine/WoadEngine.sln -c Release --no-restore
-      - run: dotnet test WoadEngine/WoadEngine.sln -c Release --no-build
+      - run: dotnet restore WoadEngine/WoadEngine.slnx
+      - run: dotnet build WoadEngine/WoadEngine.slnx -c Release --no-restore
+      - run: dotnet test WoadEngine/WoadEngine.slnx -c Release --no-build
