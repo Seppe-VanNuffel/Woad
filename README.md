@@ -59,4 +59,4 @@ See [development setup](docs/development-setup.md) for details, including headle
 
 ## License
 
-To be decided in backlog issue M0-01.
+[View license here](LICENSE)
